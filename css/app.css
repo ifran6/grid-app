@@ -43,7 +43,6 @@
     align-content: space-around;
     /* justify-content: space-between; */
     /* gap:2rem; */
-
     background: lavender;
 }
 
@@ -158,4 +157,5 @@ body{
 .nav-links:hover{
     background-color: lavender;
     color:#000;
+    cursor: pointer;
 }
