@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    display: grid;
+    /* grid-template-columns: 100% 150px; */
+    /* grid-template-columns: 2fr 1fr; */
+    /* grid-template-columns:repeat(4fr, 200px); */
+    grid-template-columns:repeat(5, 250px);
+    /* grid-template-rows: 200px, 150px; */
+    /* grid-template-columns:40% auto; */
+    grid-auto-rows:200px;
+    /* gap:.6rem; */
+    align-items: start;
+    justify-items: space-around;
+    align-content: start;
+    justify-content: center;
+    grid-gap:.6rem;
+    /* grid-column-gap: .6rem;
+    grid-row-gap: 2rem; */
+    height:35vh;
+    padding:2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.grid-box{
+    border:1px inset indianred;
+    /* margin:6px; */
+    height:200px;
+    align-content: space-around;
+    /* text-align: center; */
+    justify-content: center;
+    padding:5px;
+}
+
+
+.pg-nav{
+    display:flex;
+    align-content: space-around;
+    /* justify-content: space-between; */
+    /* gap:2rem; */
+
+    background: lavender;
+}
+
+.m-nav{
+    text-decoration: none;
+    color:brown;
+    font-weight: 200;
+    font-size:1.2rem;
+    cursor: pointer;
+    transition: 5s;
+    padding:1rem 2rem;
+}
+
+.m-nav:hover{
+    background: gray;
+    color:black;
+}
+
+.flex-container{
+    display:flex;
+    /* align-content: space-between; */
+    justify-content: center;
+    /* justify-items: center; */
+    /* align-items:start; */
+    gap:2rem;
+}
+
+.flex-box{
+    border:1px outset red;
+    align-items: center;
+    justify-content: start;
+    justify-items: start;
+    padding:2rem;
+}
+
+.flex-item-1{
+    flex-shrink: 0;
+}
+
+.flex-item-2{
+    flex-grow: 1;
+}
+
+
+
+/* display block system and inline */
+.display-block-container{
+    display:block;
+    /* align-items: center; */
+    /* margin-bottom:2px; */
+    background: red;
+}
+
+.block-box, .inline-box{
+    /* width; */
+    /* height:100px; */
+    padding:1.8rem;
+    border:1px inset indianred;
+    /* margin:5px; */
+}
+
+.inline-box{
+    width:400px;
+    margin-bottom:5px;
+}
+
+/* display-inline-container */
+.d-inline-container{
+    display:inline-block; /*similar to d-flex*/
+    /* gap: 2px; */
+}
+
+
+
+/* position and explanation */
+
+/* static is the default settings top, left, right and bottom does not affect it */
+
+/* fixed doesn't move even if you scroll the page */
+
+body{
+    position: relative;
+    height: 150vh;
+}
+
+.side-box-container{
+    width:100px;
+    display:flex;
+    flex-direction: column;
+    /* gap:.9rem; */
+    position: fixed;
+    top:25em;
+    /* padding:1rem; */
+    color:#fff;
+    font-family: 500;
+    background:#000;
+    /* margin:0; */
+    transition: 2s;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:.9rem;
+    padding:1.2rem;
+    transition: 2s;
+}
+
+.nav-links:hover{
+    background-color: lavender;
+    color:#000;
+}
