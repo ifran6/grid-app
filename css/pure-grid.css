@@ -1,0 +1,132 @@
+/* pure grid- settings */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url('../assests/images/bg3.jpg');
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: 35% auto;
+     */
+     grid-template-areas: "header aside"
+     "main aside"
+     "main footer";
+     grid-template-columns: 33% auto;
+     grid-template-rows: auto 1fr auto;
+    height: 120vh;
+}
+
+.grid-header, .grid-main,
+.grid-aside, .grid-footer{
+ text-align: center;
+ align-content: center;
+}
+
+
+.grid-header{
+    height:3.1em;
+    /* grid-template-rows: 60px; */
+    grid-area: header;
+    background-color:indianred;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-footer{
+    height:4em;
+}
+
+.grid-main{
+    grid-area: main;
+ background: lavender;
+}
+
+
+.grid-aside{
+    background:lemonchiffon;
+   /* grid-template-columns: auto; */
+   grid-area: aside;
+}
+
+.grid-footer, .footer-container{
+    background: #000;
+    color:#fff;
+ /* grid-template-rows: 60px; */
+ grid-area:footer ;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    /* gap:4rem; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer-items{
+    padding:1rem;
+}
+
+
+.nav-list{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+.grid-nav{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color:#fff;
+    padding:1rem;
+    transition: 2s;
+}
+
+.grid-nav:hover{
+    background: #fff;
+    color:#000;
+}
+
+.ads-box{
+    position:relative;
+    left: 0;
+    top:0;
+    margin:0;
+}
+
+.ads-items{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width:auto;
+    background: #000;
+    align-content: center;
+    /* justify-items: center; */
+    top:50%;
+    align-items: center;
+}
+
+.ads-link{
+    color:#fff;
+    padding:12px;
+    text-decoration: none;
+}
+
+.ads-link:hover{
+    background: #fff;
+    color:#000;
+}
+
+/* ends here */

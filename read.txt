@@ -1,0 +1,3 @@
+keyframes on
+
+stopped @ CSS - transition 
